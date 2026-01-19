@@ -31,6 +31,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     return true
   }
+
+  // Handle deep links when app is already running
+  // This is the method that is going to be called, when a deep link is tried to be called, after an app is running
+  // myapp://
+  func application(
+    _ app: UIApplication,
+    open url: URL,
+    options: [UIApplication.OpenURLOptionsKey: Any] = [:]
+  ) -> Bool {
+    // We will pass the message to React saying that a deeplink has been called, and we pass to React to process it and open the appropriate page
+    // Notification Center in iOS // pass message to different screen or appplication // service -> Observer Pattern
+    NotificationCenter.default.post(
+      name: NSNotification.Name("RCTOpenURLNotification"),
+      object: nil,
+      userInfo: ["url": url.absoluteString]
+    )
+    return true
+  }
 }
 
 class ReactNativeDelegate: RCTDefaultReactNativeFactoryDelegate {

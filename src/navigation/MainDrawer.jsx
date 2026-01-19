@@ -24,7 +24,7 @@ export default function MainDrawer() {
         options={{ title: "Main" }}
       />
       <Drawer.Screen
-        name="Settings"
+        name="Settings" // My page name
         component={SettingsScreen} // Reference to the Settings Screens
         options={{ title: "Settings" }}
       />
