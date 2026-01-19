@@ -2198,7 +2198,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native/babel-preset@npm:0.83.1":
+"@react-native/babel-preset@npm:0.83.1, @react-native/babel-preset@npm:^0.83.1":
   version: 0.83.1
   resolution: "@react-native/babel-preset@npm:0.83.1"
   dependencies:
@@ -2912,7 +2912,7 @@ __metadata:
     "@react-native-community/cli": "npm:20.0.0"
     "@react-native-community/cli-platform-android": "npm:20.0.0"
     "@react-native-community/cli-platform-ios": "npm:20.0.0"
-    "@react-native/babel-preset": "npm:0.83.1"
+    "@react-native/babel-preset": "npm:^0.83.1"
     "@react-native/eslint-config": "npm:0.83.1"
     "@react-native/metro-config": "npm:0.83.1"
     "@react-native/new-app-screen": "npm:0.83.1"

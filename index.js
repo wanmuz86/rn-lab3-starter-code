@@ -1,6 +1,9 @@
 /**
  * @format
  */
+// Import gesture handler globally
+// as it is needed for the drawer
+import "react-native-gesture-handler";
 
 import { AppRegistry } from 'react-native';
 import App from './App';
